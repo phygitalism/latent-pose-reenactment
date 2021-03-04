@@ -33,14 +33,14 @@
 set -e
 
 # Please use an ABSOLUTE path here!
-DATASET_ROOT="/Vol1/dbstore/datasets/violet/VoxCeleb2_test_finetuning"
+DATASET_ROOT="/home/app/latent-pose-reenactment/dataset"
 
 # echo "Unnamed: 0,path" > $dataset_dir/split.csv
 
 # Initialize `IDENTITIES` -- the list of folders (paths relative to $DATASET_ROOT/images
 # or $DATASET_ROOT/videos), each containing raw images or one video of some person.
 cd "$DATASET_ROOT/images" # or e.g. `"$DATASET_ROOT/videos"`
-IDENTITIES=(*) # or `(*/*)`, or whatever else
+IDENTITIES=('someone') # or `(*/*)`, or whatever else
 cd -
 
 # Alternatively, you can specify them manually, e.g.:
